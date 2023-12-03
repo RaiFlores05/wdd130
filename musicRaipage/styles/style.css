@@ -255,12 +255,107 @@ footer .social img{
 }
 
 
-.book :hover{
-    color: #19647e;
-}
+
 .button-box a:hover{
     background-color: #F47373;
 }
 main{
     text-align: center;
+}
+
+/*MUSICIANS - PAGE*/
+.body1{
+    background-color: #F47373  ;
+}
+.title2{
+    grid-column: 2/11;
+    grid-row: 1/2;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-family: "Croissant One";
+    color: #582A29;
+}
+.musicians, .musicians1, .musicians2{
+    background-color: #040404 ;
+    width: 430px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    transition: transform .5s;
+    
+}
+.musicians:hover, .musicians1:hover, .musicians2:hover{
+    background-color: #582A29;
+    transform: scale(1.1);
+    
+    
+}
+.musicians p , .musicians1 p , .musicians2 p {
+    width: 400px;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.musicians{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.musicians1{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.musicians2{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+#background{
+    height: 725px;
+    background-color: #582A29;
+    
+    grid-column: 1/11;
+    grid-row: 4/9;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.band{
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #040404 ;
+
+}
+
+.msg{
+    background-color: #925757;
+    color: antiquewhite;
+    line-height: 1.5em;
+    padding: 35px;
+    
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #925757;
+}
+.button-box1 a:hover{
+    background-color: #582A29;
+    color: white;
+    
+}
+.book1{
+    margin-top: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    font-size: 18px;
+    padding: 10px 30px;
+   
+    border-radius: 5px;
+}
+.home-title{
+    color: white
+}
+.subtitle{
+    color: white;
+    font-size: 40px;
 }
