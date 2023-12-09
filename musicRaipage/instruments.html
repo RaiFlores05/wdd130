@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Instruments</title>
 </head>
-<body>
+<body class="body2">
 
     <div id="content">
         <header>
             <a href="index.html" id="logo_link">
-                <img src="images/Music_Dreams-logos_black.png " alt="Music DreamsLogo" class="logo">
+                <img src="images/Music_Dreams-logos_white.png" alt="Music DreamsLogo" class="logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -28,8 +29,8 @@
             </div>
 
             <section id="hero-msg">
-                <h1 class="home-title">Have a musical adventure</h1>
-                <h4>Music is the only good thing in this world </h4>
+                <h1 class="home-title2">Amazing Musical Instruments</h1>
+                <h4 class="subtitle2">The perfect Instruments in the world </h4>
                 <div class="button-box">
                     <a href="index.html" class="book">Start Now</a>
                 </div>
@@ -38,36 +39,46 @@
 
         </div>
 
-        <main>
-            <div>
+        <main class="home-grid">
+            <div class="title3">
                 <h2>Music Instruments</h2>
             </div>
 
             
-            <img src="images/music-instruments.jpg" alt="">
+            <img src="images/music-instruments.jpg" alt="" class="MIns">
 
-            <div>
+            <div class="text-m">
                 <p>We love music, and music is made for many things, but in my opinion, musical instruments are the most important.
                     The piano, violin, organ, guitar, bass, drums, are divine objects. All of us can make music with them.
                     </p>
             </div>
             
+
+            <h3 id="jsT">Piano</h3>
             <img id="bigIMG" src="images/piano.jpg" alt="">
 
-            <div class="bateria">
-                <img src="images/bateria.jpg" alt="">
+            <div id="bateria">
+                <a href="#jsT" onclick="cambio1()">
+                    <img src="images/bateria.jpg" alt="">
+                </a>
             </div>
 
-            <div class="guitarra">
-                <img src="images/guitarra.jpg" alt="">
+            <div id="guitarra">
+                <a href="#jsT" onclick="cambio2()">
+                    <img src="images/guitarra.jpg" alt="">
+                </a>
             </div>
 
-            <div class="piano">
-                <img src="images/piano.jpg" alt="">
+            <div id="piano">
+                <a href="#jsT" onclick="cambio3()">
+                    <img src="images/piano.jpg" alt="">
+                </a>
             </div>
 
-            <div class="violin">
-                <img src="images/violin.jpg" alt="">
+            <div id="violin">
+                <a href="#jsT" onclick="cambio4()">
+                    <img src="images/violin.jpg" alt="">
+                </a>
             </div>
 
 
@@ -93,6 +104,37 @@
 
         </footer>
     </div>
+    
+    <script>
+	
+        //acceder a los elemtnos
+        let desc = document.getElementById("jsT");
+        let mainimg = document.getElementById("bigIMG");
+    
+        //funciones para cambiar de imagenes y desc
+    
+        function cambio1(){
+            desc.innerHTML="Bateria";
+            mainimg.src="images/bateria.jpg";
+        }
+    
+        function cambio2(){
+            desc.innerHTML="Guitarra";
+            mainimg.src="images/guitarra.jpg";
+        }
+    
+        function cambio3(){
+            desc.innerHTML="Piano";
+            mainimg.src="images/piano.jpg";
+        }
+
+        function cambio4(){
+            desc.innerHTML="Violin";
+            mainimg.src="images/violin.jpg";
+        }
+    
+    
+        </script>
     
 
 </body>
